@@ -1,0 +1,96 @@
+div, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#Projects {
+    text-align: justify;
+    font-size: 0.1px; /*hide whitespace between elements*/
+    margin: 0 auto;
+    max-width: 900px;
+}
+ 
+#Projects li {
+    display: inline-block;
+    width: 24%;
+    }
+
+.item {
+    font-size: 14px;
+    font-style: capitalize;
+    letter-spacing: 5;
+    background-color: #999999;
+    /* padding-top: 24%; */
+    margin-bottom: 1.3%;
+    /*
+    background-image: url("../img/boards-thumb.jpg");
+    */
+}
+
+.item h3 {
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: 10;
+  color: #666666;
+  margin-top: 10%;
+}
+
+.item h3, .item p {
+  display: none;
+  position: relative;
+  text-decoration: 
+}
+
+.item img {
+  width: 100%;
+}
+
+.item:hover {
+	opacity: .8;
+}
+
+.item:hover h3, .item:hover p {
+  display: inline;
+}
+
+#Projects:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 3 COL */
+
+@media (max-width: 800px){
+  #Projects li{
+    width: 32%;
+    /* padding-top: 32%; */
+    margin-bottom: 2%;
+  }
+}
+
+/* 2 COL */
+
+@media (max-width: 600px){
+  #Projects li{
+    width: 49%;
+    /* padding-top: 49%; */
+    margin-bottom: 2.3%;
+  }
+}
+
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #Projects li{
+    width: 100%;
+    /* padding-top: 100%; */
+    margin-bottom: 4%;
+  }
+  #Projects {
+    margin: 0px;
+  }
+}

@@ -1,0 +1,450 @@
+/* RESET STYLES 
+--------------------------------------------- */
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  }
+  
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+  }
+body {
+  line-height: 1;
+  }
+ol, ul {
+  list-style: none;
+  }
+blockquote, q {
+  quotes: none;
+  }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+  }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  }
+  
+/* Fonts
+--------------------------------------------- */
+
+@font-face {
+    font-family: 'museo_slab500';
+    src: url('Museo_Slab_500_2-webfont.eot');
+    src: url('Museo_Slab_500_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Museo_Slab_500_2-webfont.woff') format('woff'),
+         url('Museo_Slab_500_2-webfont.ttf') format('truetype'),
+         url('Museo_Slab_500_2-webfont.svg#museo_slab500') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'aleolight';
+    src: url('aleo-light-webfont.eot');
+    src: url('aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('aleo-light-webfont.woff') format('woff'),
+         url('aleo-light-webfont.ttf') format('truetype'),
+         url('aleo-light-webfont.svg#aleolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* SASS Message
+*********************************************************************
+Congratulations! Your compass project has been created.
+
+You may now add and edit sass stylesheets in the sass subdirectory of your project.
+
+Sass files beginning with an underscore are called partials and won't be
+compiled to CSS, but they can be imported into other sass stylesheets.
+
+You can configure your project by editing the config.rb configuration file.
+
+You must compile your sass stylesheets into CSS when they change.
+This can be done in one of the following ways:
+  1. To compile on demand:
+     compass compile [path/to/project]
+  2. To monitor your project for changes and automatically recompile:
+     compass watch [path/to/project]
+
+More Resources:
+  * Website: http://compass-style.org/
+  * Sass: http://sass-lang.com
+  * Community: http://groups.google.com/group/compass-users/ */
+
+
+/* main styles
+--------------------------------------------- */
+body {
+  font-family: Helvetica, sans-serif;
+}
+.wrapper {
+  max-width: 900px;
+  width: 96%;
+  margin: 0 auto;
+}
+header {
+    background-color: #333132;
+    margin-bottom: 2em;
+    width: 100%;
+    opacity: .95;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+  max-width: 900;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 18px;
+  float: left;
+  width: 180px;
+  height: 59px;
+     -webkit-transition: background 0.4s;
+  -moz-transition:    background 0.4s;
+  -o-transition:      background 0.4s;
+  background: url(../img/logo.png) no-repeat top left;
+  }
+
+
+.logo:hover { 
+  -webkit-transition: background 0.4s;
+  -moz-transition:    background 0.4s;
+  -o-transition:      background 0.4s;
+  background: url(../img/logo-hover.png) no-repeat top left;
+}
+
+nav.extended {
+  float: right;
+  width: 55%;
+  color: white;
+}
+
+nav.extended ul {
+  width: 100%;
+  text-align: justify;
+  margin: 0px auto;
+}
+
+nav.extended li {
+  display: inline-block;
+  height: 58px;
+  padding: 42px 10px 0px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 3;
+  background-color: none;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition:    background-color 0.4s;
+  -o-transition:      background-color 0.4s;
+}
+
+nav.extended li:hover {
+  background-color: #bc522a;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition:    background-color 0.4s;
+  -o-transition:      background-color 0.4s;
+  font-size: 14px;
+  -webkit-transition: font-size 0.2s;
+  -moz-transition:    font-size 0.2s;
+  -o-transition:      font-size 0.2s;
+}
+
+nav.extended li.spacer {
+  width: 100%;
+  font-size: 0px;
+  opacity: 0;
+}
+
+nav.collapse {
+  display: none;
+  float: right;
+  width: 60px;
+  height: auto;
+  background-color: #333132;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 5px 0;
+  margin-top: 7px;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition:    background-color 0.4s;
+  -o-transition:      background-color 0.4s;
+}
+
+nav.collapse div {
+  background-color: #FFFFFF;
+  height: 4px;
+  margin: 5px auto;
+  width: 70%;
+}
+
+nav.collapse:hover {
+  background-color: #bc522a;
+  -webkit-transition: background-color 0.4s;
+  -moz-transition:    background-color 0.4s;
+  -o-transition:      background-color 0.4s;
+}
+
+.headline h1 {
+  font-family: 'aleolight', sans-serif;
+  font-size: 2em;
+  line-height: 1.1em;
+  color: 464646; 
+  padding-top: 135px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+div, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#projects {
+    text-align: justify;
+    font-size: 0em; /*hide whitespace between elements*/
+    margin: 0 auto;
+}
+ 
+#projects li {
+    display: inline-block;
+    width: 32%;
+    opacity: 1;
+    padding-top: 32%;
+    margin-bottom: 1.3%;
+    font-size: 1rem;
+    position: relative;
+    border-radius: 4px;
+    opacity: 0.4;
+    }
+
+#projects li:hover {
+  opacity: 1;
+}
+
+.item:hover .text {
+  display: inline;
+  opacity: 1;
+}
+
+.text {
+  display: none;
+  position: relative;
+  color: red;
+  text-align: left;
+  padding: 1.5em;
+  width: 70%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.text h3 {
+  font-family: 'aleolight', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+.text p {
+  font-family: Helvetica;
+  font-size: .7em;
+  line-height: 1.5em;
+  letter-spacing: 1;
+}
+
+#projects:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+/* Individual Project Pages */
+
+.individual {
+  margin: 0 auto;
+}
+.project-slider {
+  float: left;
+  width: 65%;
+  display: block;
+  padding-top: 45%;
+  background-color: #999999;
+}
+
+.description {
+  float: right;
+  width: 30%;
+  display: block;
+  font-family: Helvetica;
+  font-size: .7em;
+  line-height: 1.5em;
+  letter-spacing: 1;
+  text-align: left;
+}
+
+.description h4 {
+  font-family: 'aleolight', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
+
+/* PROJECTS ----------------------------------- INDIVIDUALS */
+
+.sms {
+  background: url("../img/sms-sprite.jpg");
+  background-size: 100%;
+}
+
+.concrete-canvas {
+  background: url("../img/boards-thumb.jpg");
+  background-size: 100%;
+}
+
+/* ----------------------------------- */
+
+.clear {
+  width: 100%;
+  font-size: 0em;
+  display: inline-block;
+}
+
+.about {
+  width: 100%;
+  height: 300px;
+  background-color: #bc522a;
+  margin-top: 30px;
+  color: white;
+  font-size: .8em;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-weight: 100;
+  padding: 40px 0px
+}
+
+.about h3 {
+  font-size: 3em;
+  font-family: 'aleolight', sans-serif;
+  line-height: 2em;
+}
+.about img {
+  margin-right: 5%;
+  width: 20%;
+  float: left;
+  clear: both;
+}
+.description-about {
+  float: left;
+  width: 75%;
+}
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 2 COL */
+
+@media (max-width: 840px){
+
+  nav.extended {
+  width: 40%;
+  }
+
+  nav.extended ul {
+    margin: 0px auto;
+  }
+
+  nav.extended li {
+    float: right;
+    padding: 5px 0px;
+    width: 100px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+}
+
+@media (max-width: 700px){
+
+  #projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+
+}
+
+@media (max-width: 700px){
+    .project-slider {
+  width: 100%;
+  padding-top: 65%;
+  }
+
+  .description {
+    float: left;
+    width: 100%;
+    padding: 0 auto;
+  }
+
+/* 2 COL */
+
+@media (max-width: 610px){
+  #projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+
+  nav.extended {
+    display: none;
+  }
+
+  nav.collapse {
+    display: block;
+  }
+
+}
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  #projects li{
+    width: 100%;
+    padding-top: 100%; 
+    margin-bottom: 4%;
+  }
+  #projects {
+    margin: 0px;
+  }
+  .header h1 {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+
+}

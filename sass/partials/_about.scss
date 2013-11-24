@@ -1,0 +1,43 @@
+$width1: 840px;
+$width2: 700px;
+$width3: 610px;
+$width4: 400px;
+
+#about {
+  width: 100%;
+  height: 300px;
+  background-color: #333132;
+  margin-top: 30px;
+  color: white;
+  font-size: 0.8em;
+  font-family: Helvetica, sans-serif;
+  line-height: 1.5em;
+  font-weight: 100;
+  padding: 40px 0px;
+		 -webkit-transition: background-color 0.4s;
+		 -moz-transition:    background-color 0.4s;
+		 -o-transition:      background-color 0.4s;
+
+  img {
+  margin-right: 5%;
+  width: 20%;
+  float: left;
+  clear: both;
+  }
+  h3 {
+  font-size: 2em;
+  font-family: 'aleolight', sans-serif;
+  line-height: 2em;
+  letter-spacing: 2px;
+  }
+  p {
+    float: left;
+    width: 60%;
+  }
+}
+#about:hover {
+  background-color: #bc522a;
+		  -webkit-transition: background-color 0.4s; 
+		  -moz-transition:    background-color 0.4s;
+		  -o-transition:      background-color 0.4s;
+}

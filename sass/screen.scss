@@ -1,0 +1,150 @@
+@import "compass/reset";
+@import "partials/_nav.scss";
+@import "partials/_projects.scss";
+@import "partials/_about.scss";
+@import "partials/_main.scss";
+@import "partials/_normalize.scss";
+@import "partials/_blinds.scss";
+
+$width1: 840px;
+$width2: 700px;
+$width3: 610px;
+$width4: 400px;
+
+/* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
+
+/* 2 COL */
+
+@media (max-width: 840px){
+
+  nav.extended {
+  width: 30%;
+  }
+
+  nav.extended li {
+    float: right;
+  }
+
+}
+
+@media (max-width: 700px){
+
+  .projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+
+}
+
+@media (max-width: 700px){
+    .project-slider {
+  width: 100%;
+  padding-top: 65%;
+  }
+
+  .description {
+    float: left;
+    width: 100%;
+    padding: 0 auto;
+  }
+}
+/* 2 COL */
+
+@media (max-width: 610px){
+  .projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+
+  nav.extended {
+    display: none;
+  }
+
+  nav.collapse {
+    display: block;
+  }
+
+}
+/* SINGLE COL */
+
+@media (max-width: 400px){
+  .projects li{
+    width: 100%;
+    padding-top: 100%; 
+    margin-bottom: 4%;
+  }
+  .projects {
+    margin: 0px;
+  }
+  .header h1 {
+    font-size: 2em;
+    line-height: 1.1em;
+  }
+
+}
+
+@font-face {
+    font-family: 'aleolight';
+    src: url('fonts/aleo-light-webfont.eot');
+    src: url('fonts/aleo-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/aleo-light-webfont.woff') format('woff'),
+         url('fonts/aleo-light-webfont.ttf') format('truetype'),
+         url('fonts/aleo-light-webfont.svg#aleolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.wrapper {
+  max-width: 900px;
+  width: 96%;
+  margin: 0 auto;
+}
+header {
+    background-color: #333132;
+    margin-bottom: 2em;
+    width: 100%;
+    opacity: .95;
+    height: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+.container {
+  max-width: 900px;
+  width: 96%;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-top: 18px;
+  float: left;
+  width: 180px;
+  height: 59px;
+  -webkit-transition: background 0.4s;
+  -moz-transition:    background 0.4s;
+  -o-transition:      background 0.4s;
+  background: url(../img/logo.png) no-repeat top left;
+  }
+
+
+.logo:hover { 
+  -webkit-transition: background 0.4s;
+  -moz-transition:    background 0.4s;
+  -o-transition:      background 0.4s;
+  background: url(../img/logo-hover.png) no-repeat top left;
+}
+
+div, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+		

@@ -1,0 +1,127 @@
+$width1: 840px;
+$width2: 700px;
+$width3: 610px;
+$width4: 400px;
+
+@media (max-width: $width2){
+
+  .projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+
+}
+
+@media (max-width: $width3){
+  .projects li{
+    width: 49%;
+    padding-top: 49%; 
+    margin-bottom: 2.3%;
+  }
+}
+
+.projects {
+    text-align: justify;
+    font-size: 0em; /*hide whitespace between elements*/
+    margin: 0 auto;
+    padding-top: 150px;
+    
+    li {
+      display: inline-block;
+      opacity: 1;
+      margin-bottom: 2%;
+      font-size: 1rem;
+      position: relative;
+      border-radius: 4px;
+      background-size: 100%;
+    }
+
+    li.closed {
+      width: 32%;
+      padding-top: 32%;
+      -webkit-transition: width 0.4s, padding-top 0.4s;
+      -moz-transition:    width 0.4s, padding-top 0.4s;
+      -o-transition:      width 0.4s, padding-top 0.4s;
+
+      .slideshow {
+        display:none;
+
+        li{
+          display:none;
+        }
+      }
+    }
+
+    li.closed:hover {
+      opacity: .8;
+    }
+
+    li.open {
+      width: 100%;
+      -webkit-transition: width 0.4s, padding-top 0.4s;
+      -moz-transition:    width 0.4s, padding-top 0.4s;
+      -o-transition:      width 0.4s, padding-top 0.4s;
+      background: none;
+
+      .slideshow {
+        display: block;
+      }
+    }
+}
+
+.projects:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.projects .placeholder {
+  padding-top: 0;
+  font-size:0.1;
+}
+
+.text {
+  display: none;
+  position: relative;
+  color: red;
+  text-align: left;
+  padding: 1.5em;
+  width: 70%;
+  height: 70%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  h3 {
+    font-family: 'aleolight', sans-serif;
+    font-size: 1.6em;
+    line-height: 1.2em;
+  }
+
+  p {
+    font-family: Helvetica;
+    font-size: .7em;
+    line-height: 1.5em;
+    letter-spacing: 1;
+  }
+}
+
+/* PROJECTS ----------------------------------- INDIVIDUALS */
+
+.sms {
+  background: url("../img/sms-sprite.jpg");
+}
+
+.concrete-canvas {
+  background: url("../img/boards-thumb.jpg");
+}
+
+/* ----------------------------------- */
+
+.clear {
+  width: 100%;
+  font-size: 0em;
+  display: inline-block;
+}
