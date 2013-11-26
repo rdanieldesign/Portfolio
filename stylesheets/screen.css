@@ -191,10 +191,9 @@ nav.collapse:hover {
   margin-bottom: 2%;
   font-size: 1rem;
   position: relative;
-  border-radius: 4px;
   background-size: 100%;
 }
-/* line 40, ../sass/partials/_projects.scss */
+/* line 39, ../sass/partials/_projects.scss */
 .projects li.closed {
   width: 32%;
   padding-top: 32%;
@@ -202,15 +201,15 @@ nav.collapse:hover {
   -moz-transition: width 0.4s, padding-top 0.4s;
   -o-transition: width 0.4s, padding-top 0.4s;
 }
-/* line 47, ../sass/partials/_projects.scss */
+/* line 46, ../sass/partials/_projects.scss */
 .projects li.closed .slideshow {
   display: none;
 }
-/* line 53, ../sass/partials/_projects.scss */
+/* line 52, ../sass/partials/_projects.scss */
 .projects li.closed:hover {
   opacity: .8;
 }
-/* line 57, ../sass/partials/_projects.scss */
+/* line 56, ../sass/partials/_projects.scss */
 .projects li.open {
   width: 100%;
   -webkit-transition: width 0.4s, padding-top 0.4s;
@@ -218,51 +217,73 @@ nav.collapse:hover {
   -o-transition: width 0.4s, padding-top 0.4s;
   background: none;
 }
-/* line 64, ../sass/partials/_projects.scss */
+/* line 63, ../sass/partials/_projects.scss */
 .projects li.open ul {
-  height: 375px;
+  height: 350px;
   overflow: scroll;
 }
-/* line 69, ../sass/partials/_projects.scss */
+/* line 68, ../sass/partials/_projects.scss */
 .projects li.open .slideshow {
   display: block;
+  position: relative;
+  width: 100%;
 }
-/* line 73, ../sass/partials/_projects.scss */
+/* line 74, ../sass/partials/_projects.scss */
 .projects li.open .slideshow li {
   width: 100%;
 }
-/* line 77, ../sass/partials/_projects.scss */
+/* line 78, ../sass/partials/_projects.scss */
 .projects li.open .slideshow img {
   width: 100%;
   height: auto;
+}
+
+/* line 84, ../sass/partials/_projects.scss */
+.slide-wrap {
   position: relative;
 }
 
 /* line 85, ../sass/partials/_projects.scss */
 .slide-nav {
+  position: relative;
+  height: auto;
+  position: relative;
+  z-index: 15;
   width: 100%;
-  font-family: Helvetica, sans-serif;
-  letter-spacing: 3px;
-  background: #333132;
-  color: white;
+  display: none;
 }
-/* line 92, ../sass/partials/_projects.scss */
+/* line 97, ../sass/partials/_projects.scss */
 .slide-nav div {
-  width: 25%;
-  display: inline-block;
-  padding: 5px 20px;
+  background-color: green;
+  padding: 10px;
+  position: relative;
 }
-/* line 98, ../sass/partials/_projects.scss */
-.slide-nav div:nth-child(2) {
-  color: red;
-  text-align: center;
+/* line 103, ../sass/partials/_projects.scss */
+.slide-nav .previous {
+  float: left;
+  opacity: .2;
+}
+/* line 107, ../sass/partials/_projects.scss */
+.slide-nav .previous:hover {
+  float: left;
+  opacity: .5;
+}
+/* line 112, ../sass/partials/_projects.scss */
+.slide-nav .next {
+  float: right;
+  opacity: .2;
+}
+/* line 116, ../sass/partials/_projects.scss */
+.slide-nav .next:hover {
+  float: right;
+  opacity: .5;
 }
 
-/* line 104, ../sass/partials/_projects.scss */
+/* line 122, ../sass/partials/_projects.scss */
 aside.description {
   padding-top: 20px;
 }
-/* line 108, ../sass/partials/_projects.scss */
+/* line 126, ../sass/partials/_projects.scss */
 aside.description h3 {
   float: left;
   width: 20%;
@@ -275,7 +296,7 @@ aside.description h3 {
   text-align: right;
   color: #bc522a;
 }
-/* line 121, ../sass/partials/_projects.scss */
+/* line 139, ../sass/partials/_projects.scss */
 aside.description p {
   width: 65%;
   float: right;
@@ -285,20 +306,20 @@ aside.description p {
   color: #333132;
 }
 
-/* line 130, ../sass/partials/_projects.scss */
+/* line 148, ../sass/partials/_projects.scss */
 .projects:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 136, ../sass/partials/_projects.scss */
+/* line 154, ../sass/partials/_projects.scss */
 .projects .placeholder {
   padding-top: 0;
   font-size: 0.1;
 }
 
-/* line 141, ../sass/partials/_projects.scss */
+/* line 159, ../sass/partials/_projects.scss */
 .text {
   display: none;
   position: relative;
@@ -312,13 +333,13 @@ aside.description p {
   right: 0;
   bottom: 0;
 }
-/* line 154, ../sass/partials/_projects.scss */
+/* line 172, ../sass/partials/_projects.scss */
 .text h3 {
   font-family: 'aleolight', sans-serif;
   font-size: 1.6em;
   line-height: 1.2em;
 }
-/* line 160, ../sass/partials/_projects.scss */
+/* line 178, ../sass/partials/_projects.scss */
 .text p {
   font-family: Helvetica;
   font-size: .7em;
@@ -327,18 +348,18 @@ aside.description p {
 }
 
 /* PROJECTS ----------------------------------- INDIVIDUALS */
-/* line 170, ../sass/partials/_projects.scss */
+/* line 188, ../sass/partials/_projects.scss */
 .sms {
   background: url("../img/sms-sprite.jpg");
 }
 
-/* line 174, ../sass/partials/_projects.scss */
+/* line 192, ../sass/partials/_projects.scss */
 .concrete-canvas {
   background: url("../img/boards-thumb.jpg");
 }
 
 /* ----------------------------------- */
-/* line 180, ../sass/partials/_projects.scss */
+/* line 198, ../sass/partials/_projects.scss */
 .clear {
   width: 100%;
   font-size: 0em;
