@@ -206,15 +206,11 @@ nav.collapse:hover {
 .projects li.closed .slideshow {
   display: none;
 }
-/* line 50, ../sass/partials/_projects.scss */
-.projects li.closed .slideshow li {
-  display: none;
-}
-/* line 56, ../sass/partials/_projects.scss */
+/* line 53, ../sass/partials/_projects.scss */
 .projects li.closed:hover {
   opacity: .8;
 }
-/* line 60, ../sass/partials/_projects.scss */
+/* line 57, ../sass/partials/_projects.scss */
 .projects li.open {
   width: 100%;
   -webkit-transition: width 0.4s, padding-top 0.4s;
@@ -222,25 +218,87 @@ nav.collapse:hover {
   -o-transition: width 0.4s, padding-top 0.4s;
   background: none;
 }
-/* line 67, ../sass/partials/_projects.scss */
+/* line 64, ../sass/partials/_projects.scss */
+.projects li.open ul {
+  height: 375px;
+  overflow: scroll;
+}
+/* line 69, ../sass/partials/_projects.scss */
 .projects li.open .slideshow {
   display: block;
 }
-
 /* line 73, ../sass/partials/_projects.scss */
+.projects li.open .slideshow li {
+  width: 100%;
+}
+/* line 77, ../sass/partials/_projects.scss */
+.projects li.open .slideshow img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+/* line 85, ../sass/partials/_projects.scss */
+.slide-nav {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 3px;
+  background: #333132;
+  color: white;
+}
+/* line 92, ../sass/partials/_projects.scss */
+.slide-nav div {
+  width: 25%;
+  display: inline-block;
+  padding: 5px 20px;
+}
+/* line 98, ../sass/partials/_projects.scss */
+.slide-nav div:nth-child(2) {
+  color: red;
+  text-align: center;
+}
+
+/* line 104, ../sass/partials/_projects.scss */
+aside.description {
+  padding-top: 20px;
+}
+/* line 108, ../sass/partials/_projects.scss */
+aside.description h3 {
+  float: left;
+  width: 20%;
+  font-family: 'aleolight', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  clear: both;
+  text-align: right;
+  color: #bc522a;
+}
+/* line 121, ../sass/partials/_projects.scss */
+aside.description p {
+  width: 65%;
+  float: right;
+  padding-left: 30px;
+  font-family: Helvetica, sans-serif;
+  font-size: .8em;
+  color: #333132;
+}
+
+/* line 130, ../sass/partials/_projects.scss */
 .projects:after {
   content: '';
   display: inline-block;
   width: 100%;
 }
 
-/* line 79, ../sass/partials/_projects.scss */
+/* line 136, ../sass/partials/_projects.scss */
 .projects .placeholder {
   padding-top: 0;
   font-size: 0.1;
 }
 
-/* line 84, ../sass/partials/_projects.scss */
+/* line 141, ../sass/partials/_projects.scss */
 .text {
   display: none;
   position: relative;
@@ -254,13 +312,13 @@ nav.collapse:hover {
   right: 0;
   bottom: 0;
 }
-/* line 97, ../sass/partials/_projects.scss */
+/* line 154, ../sass/partials/_projects.scss */
 .text h3 {
   font-family: 'aleolight', sans-serif;
   font-size: 1.6em;
   line-height: 1.2em;
 }
-/* line 103, ../sass/partials/_projects.scss */
+/* line 160, ../sass/partials/_projects.scss */
 .text p {
   font-family: Helvetica;
   font-size: .7em;
@@ -269,18 +327,18 @@ nav.collapse:hover {
 }
 
 /* PROJECTS ----------------------------------- INDIVIDUALS */
-/* line 113, ../sass/partials/_projects.scss */
+/* line 170, ../sass/partials/_projects.scss */
 .sms {
   background: url("../img/sms-sprite.jpg");
 }
 
-/* line 117, ../sass/partials/_projects.scss */
+/* line 174, ../sass/partials/_projects.scss */
 .concrete-canvas {
   background: url("../img/boards-thumb.jpg");
 }
 
 /* ----------------------------------- */
-/* line 123, ../sass/partials/_projects.scss */
+/* line 180, ../sass/partials/_projects.scss */
 .clear {
   width: 100%;
   font-size: 0em;
@@ -314,16 +372,15 @@ nav.collapse:hover {
 #about h3 {
   font-size: 2em;
   font-family: 'aleolight', sans-serif;
-  line-height: 2em;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
-/* line 33, ../sass/partials/_about.scss */
+/* line 32, ../sass/partials/_about.scss */
 #about p {
   float: left;
   width: 60%;
 }
 
-/* line 38, ../sass/partials/_about.scss */
+/* line 37, ../sass/partials/_about.scss */
 #about:hover {
   background-color: #bc522a;
   -webkit-transition: background-color 0.4s;

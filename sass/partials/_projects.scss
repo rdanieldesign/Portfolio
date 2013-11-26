@@ -46,11 +46,8 @@ $width4: 400px;
 
       .slideshow {
         display:none;
-
-        li{
-          display:none;
-        }
       }
+
     }
 
     li.closed:hover {
@@ -64,12 +61,72 @@ $width4: 400px;
       -o-transition:      width 0.4s, padding-top 0.4s;
       background: none;
 
+      ul {
+      height: 375px;
+      overflow: scroll;
+      }
+
       .slideshow {
         display: block;
+      }
+
+      .slideshow li{
+        width: 100%;
+      }
+
+      .slideshow img {
+        width: 100%;
+        height: auto;
+        position: relative;
       }
     }
 }
 
+.slide-nav {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  letter-spacing: 3px;
+  background: #333132;
+  color: white;
+
+  div {
+    width: 25%;
+    display:inline-block;
+    padding: 5px 20px;
+  }
+
+  div:nth-child(2) {
+    color: red;
+    text-align: center;
+  }
+}
+
+aside.description {
+
+  padding-top:20px;
+  
+  h3 {
+    float: left;
+    width:20%;
+    font-family: 'aleolight', sans-serif;
+    font-size: 2em;
+    font-weight: 100;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    clear: both;
+    text-align: right;
+    color: #bc522a;
+  }
+
+  p {
+    width:65%;
+    float: right;
+    padding-left: 30px;
+    font-family: Helvetica, sans-serif;
+    font-size: .8em;
+    color: #333132;
+  }
+}
 .projects:after {
     content: '';
     display: inline-block;

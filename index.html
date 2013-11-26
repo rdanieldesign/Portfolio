@@ -19,7 +19,7 @@
     <header>
         <div class="container">
             <div class="logo">
-                <a href="index.html">
+                <a href="#">
                 </a>
             </div>
             <nav class="extended">
@@ -45,17 +45,25 @@
 <div class="wrapper">       
     <ul class="projects">
         <li class="closed concrete-canvas">
-          <div class="slideshow"> 
-               <ul> 
-                  <li class="first-slide"><img src="lemons/1.jpg" alt="lemon" /></li>
-                  <li><img src="lemons/2.jpg" alt="lemon tea" /></li>
-                  <li><img src="lemons/3.jpg" alt="splashing lemon" /></li>
-                  <li><img src="lemons/4.jpg" alt="salad with lemon" /></li>
-                  <li><img src="lemons/5.jpg" alt="lemonade!" /></li>
-                  <li><img src="lemons/6.jpg" alt="sliced lemon" /></li>
-                  <li><img src="lemons/7.jpg" alt="dripping lemon" /></li>
-               </ul> 
-         </div>       
+           <ul class="slideshow"> 
+              <li><img src="img/1.jpg" alt="lemon" /></li>
+              <li><img src="img/2.jpg" alt="lemon tea" /></li>
+              <li><img src="img/3.jpg" alt="splashing lemon" /></li>
+              <li><img src="img/4.jpg" alt="salad with lemon" /></li>
+              <li><img src="img/5.jpg" alt="lemonade!" /></li>
+              <li><img src="img/6.jpg" alt="sliced lemon" /></li>
+              <li><img src="img/7.jpg" alt="dripping lemon" /></li>
+           </ul> 
+           <div class="slide-nav slideshow">
+                <div>Last</div>
+                <div><a class="exit" href="#">Close</a></div>
+                <div>Next</div>
+           </div>
+           <aside class="description slideshow">
+            <h3>Concrete Canvas</h3>
+            <p> Concrete Canvas is a skateboard shop located in Auburn, Alabama, a town with a large population of skateboarders who are currently forced to purchase products online or from neighboring cities. This shop prides itself on emphasizing skateboarding as an art rather than a sport, viewing the activity as a creative interpretation of one’s surrounding landscape in a physical manner. Contemporary skate shops have taken the role as a community center and headquarters for local skateboarders; while maintaining the function of providing necessary products for skateboarding, shops also carry the responsibility of promoting the local skate scene. Concrete Canvas is an operation run purely for skateboarders by skateboarders. We intend to create unity in a scattered skateboarding scene by emphasizing key values in the community. 
+            </p>
+           </aside>
         </li>
 
         <li class="closed sms">
@@ -120,20 +128,9 @@
 </div> 
 </div>
         
-        
-
-        <!-- change image links -->
-        <a class="change_link" onclick="$('.slideshow').blinds_change(0)">1</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(1)">2</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(2)">3</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(3)">4</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(4)">5</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(5)">6</a>
-        <a class="change_link" onclick="$('.slideshow').blinds_change(6)">7</a>
 
 </body>
 <script language="javascript" type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
-<script language="Javascript" type="text/javascript" src="js/jquery.blinds-0.9.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
 <script language="javascript" type="text/javascript" src="js/rd.js"></script>
 <script src="js/plugins.js"></script>
