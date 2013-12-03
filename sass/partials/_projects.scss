@@ -43,7 +43,7 @@ $width4: 400px;
       -moz-transition:    width 0.4s, padding-top 0.4s;
       -o-transition:      width 0.4s, padding-top 0.4s;
 
-      .slideshow {
+      .slide-wrap {
         display:none;
       }
 
@@ -65,10 +65,16 @@ $width4: 400px;
       overflow: scroll;
       }
 
-      .slideshow {
+      .slide-wrap {
         display: block;
         position: relative;
+      }
+
+      .slideshow {
+        position: relative;
+        display: block;
         width: 100%;
+        z-index: 5;
       }
 
       .slideshow li{
@@ -77,47 +83,34 @@ $width4: 400px;
 
       .slideshow img {
         width: 100%;
-        height: auto;
       }
+
+      .slide-nav {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        display: none;
+        top: -350px;
+
+          .previous {
+            float: left;
+            opacity: .2;
+          }
+          .previous:hover {
+            opacity: .5;
+          }
+
+          .next {
+            float: right;
+            opacity: .2;
+          }
+          .next:hover {
+            opacity: .5;
+          }
+        }
     }
 }
-.slide-wrap {position:relative;}
-.slide-nav {
-      position:relative;
 
-  height: auto;
-  position: relative;
-  z-index: 15;
-  width: 100%;
-  display: none;
-
-  img {
-  }
-
-  div {
-    background-color: green;
-    padding:10px;
-    position:relative;
-  }
-
-  .previous {
-    float: left;
-    opacity: .2;
-  }
-  .previous:hover {
-    float: left;
-    opacity: .5;
-  }
-
-  .next {
-    float: right;
-    opacity: .2;
-  }
-  .next:hover {
-    float: right;
-    opacity: .5;
-  }
-}
 
 aside.description {
 
@@ -131,7 +124,6 @@ aside.description {
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 3px;
-    clear: both;
     text-align: right;
     color: #bc522a;
   }
