@@ -47,6 +47,10 @@ $width4: 400px;
         display:none;
       }
 
+      aside {
+        display: none;
+      }
+
     }
 
     li.closed:hover {
@@ -62,7 +66,6 @@ $width4: 400px;
 
       ul {
       height: 350px;
-      overflow: scroll;
       }
 
       .slide-wrap {
@@ -86,15 +89,12 @@ $width4: 400px;
       }
 
       .slide-nav {
-        position: relative;
-        z-index: 10;
         width: 100%;
-        display: none;
-        top: -350px;
+        display: block;
 
           .previous {
             float: left;
-            opacity: .2;
+            opacity: 1;
           }
           .previous:hover {
             opacity: .5;
@@ -102,7 +102,7 @@ $width4: 400px;
 
           .next {
             float: right;
-            opacity: .2;
+            opacity: 1;
           }
           .next:hover {
             opacity: .5;

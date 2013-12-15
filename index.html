@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 	<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-    <script src="js/modernizer.js"></script>
 </head>
 <body>
      <!--[if lt IE 7]>
@@ -45,14 +44,6 @@
     <ul class="projects">
         <li class="closed concrete-canvas">
            <div class="slide-wrap">
-               <div class="slide-nav">
-                    <div class="previous">
-                        <img src="img/project-arrow-left.png"/>
-                    </div>
-                    <div class="next">
-                        <img src="img/project-arrow-right.png"/>
-                    </div>
-               </div>
                <ul class="slideshow"> 
                   <li><img src="img/1.jpg" alt="lemon" /></li>
                   <li><img src="img/2.jpg" alt="lemon tea" /></li>
@@ -132,11 +123,49 @@
 </div> 
 </div>
         
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/1.jpg" />
+    </li>
+    <li>
+      <img src="img/2.jpg" />
+    </li>
+    <li>
+      <img src="img/3.jpg" />
+    </li>
+  </ul>
+</div>
+
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <img src="img/1.jpg" />
+    </li>
+    <li>
+      <img src="img/2.jpg" />
+    </li>
+    <li>
+      <img src="img/3.jpg" />
+    </li>
+  </ul>
+</div>
 
 </body>
 <script language="javascript" type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery-1.9.0.min.js"><\/script>')</script>
-<script language="javascript" type="text/javascript" src="js/cycle.js"></script>
+  <!-- FlexSlider -->
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript">
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+</script>
 <script language="javascript" type="text/javascript" src="js/rd.js"></script>
 <script src="js/plugins.js"></script>
 
