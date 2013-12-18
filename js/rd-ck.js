@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".closed").click(function(){$(".open").addClass("closed").removeClass("open");$(this).addClass("open").removeClass("closed")})});
+$(document).ready(function(){$(".closed").click(function(){$(".open").addClass("closed").removeClass("open");$(this).addClass("open").removeClass("closed");$(".flexslider").flexslider({animation:"slide",start:function(e){$("body").removeClass("loading")}})})});

@@ -30,7 +30,6 @@ $width4: 400px;
     li {
       display: inline-block;
       opacity: 1;
-      margin-bottom: 2%;
       font-size: 1rem;
       position: relative;
       background-size: 100%;
@@ -39,11 +38,12 @@ $width4: 400px;
     li.closed {
       width: 32%;
       padding-top: 32%;
+      margin-bottom: 2%;
       -webkit-transition: width 0.4s, padding-top 0.4s;
       -moz-transition:    width 0.4s, padding-top 0.4s;
       -o-transition:      width 0.4s, padding-top 0.4s;
 
-      .slide-wrap {
+      .flexslider {
         display:none;
       }
 
@@ -59,55 +59,7 @@ $width4: 400px;
 
     li.open {
       width: 100%;
-      -webkit-transition: width 0.4s, padding-top 0.4s;
-      -moz-transition:    width 0.4s, padding-top 0.4s;
-      -o-transition:      width 0.4s, padding-top 0.4s;
       background: none;
-
-      ul {
-      height: 350px;
-      }
-
-      .slide-wrap {
-        display: block;
-        position: relative;
-      }
-
-      .slideshow {
-        position: relative;
-        display: block;
-        width: 100%;
-        z-index: 5;
-      }
-
-      .slideshow li{
-        width: 100%;
-      }
-
-      .slideshow img {
-        width: 100%;
-      }
-
-      .slide-nav {
-        width: 100%;
-        display: block;
-
-          .previous {
-            float: left;
-            opacity: 1;
-          }
-          .previous:hover {
-            opacity: .5;
-          }
-
-          .next {
-            float: right;
-            opacity: 1;
-          }
-          .next:hover {
-            opacity: .5;
-          }
-        }
     }
 }
 
@@ -147,32 +99,18 @@ aside.description {
   padding-top: 0;
   font-size:0.1;
 }
-
-.text {
-  display: none;
-  position: relative;
-  color: red;
-  text-align: left;
-  padding: 1.5em;
-  width: 70%;
-  height: 70%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   
-  h3 {
-    font-family: 'aleolight', sans-serif;
-    font-size: 1.6em;
-    line-height: 1.2em;
-  }
+h3 {
+  font-family: 'aleolight', sans-serif;
+  font-size: 1.6em;
+  line-height: 1.2em;
+}
 
-  p {
-    font-family: Helvetica;
-    font-size: .7em;
-    line-height: 1.5em;
-    letter-spacing: 1;
-  }
+p {
+  font-family: Helvetica;
+  font-size: .7em;
+  line-height: 1.5em;
+  letter-spacing: 1;
 }
 
 /* PROJECTS ----------------------------------- INDIVIDUALS */

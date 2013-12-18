@@ -13,7 +13,7 @@ $width4: 400px;
 
 /* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
 
-/* 2 COL */
+/* 2 COL 
 
 @media (max-width: 840px){
 
@@ -48,10 +48,10 @@ $width4: 400px;
     width: 100%;
     padding: 0 auto;
   }
-}
+} */
 /* 2 COL */
 
-@media (max-width: 610px){
+/* @media (max-width: 610px){
   .projects li{
     width: 49%;
     padding-top: 49%; 
@@ -66,10 +66,10 @@ $width4: 400px;
     display: block;
   }
 
-}
+} */
 /* SINGLE COL */
 
-@media (max-width: 400px){
+/* @media (max-width: 400px){
   .projects li{
     width: 100%;
     padding-top: 100%; 
@@ -83,7 +83,7 @@ $width4: 400px;
     line-height: 1.1em;
   }
 
-}
+} */
 
 @font-face {
     font-family: 'aleolight';
