@@ -202,7 +202,7 @@ nav.collapse:hover {
   -o-transition: width 0.4s, padding-top 0.4s;
 }
 /* line 46, ../sass/partials/_projects.scss */
-.projects li.closed .flexslider {
+.projects li.closed .slider-hook {
   display: none;
 }
 /* line 50, ../sass/partials/_projects.scss */
