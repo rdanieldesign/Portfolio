@@ -70,23 +70,29 @@ aside.description {
   
   h3 {
     float: left;
-    width:20%;
-    font-family: 'aleolight', sans-serif;
-    font-size: 2em;
+    width: 32%;
+    font-family: 'oswaldlight', sans-serif;
+    font-size: 2.2em;
     font-weight: 100;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: right;
+    text-align: center;
     color: #bc522a;
   }
 
   p {
-    width:65%;
+    -moz-column-count:2; /* Firefox */
+    -webkit-column-count:2; /* Safari and Chrome */
+    column-count:2;
+    -moz-column-gap: 1.9em; /* Firefox */
+    -webkit-column-gap: 1.9em; /* Safari and Chrome */
+    column-gap: 1.9em;
+    width: 66%;
     float: right;
-    padding-left: 30px;
     font-family: Helvetica, sans-serif;
-    font-size: .8em;
-    color: #333132;
+    font-size: .75em;
+    line-height: 1.6em;
+    color: #838383;
   }
 }
 .projects:after {
@@ -98,19 +104,6 @@ aside.description {
 .projects .placeholder {
   padding-top: 0;
   font-size:0.1;
-}
-  
-h3 {
-  font-family: 'aleolight', sans-serif;
-  font-size: 1.6em;
-  line-height: 1.2em;
-}
-
-p {
-  font-family: Helvetica;
-  font-size: .7em;
-  line-height: 1.5em;
-  letter-spacing: 1;
 }
 
 /* PROJECTS ----------------------------------- INDIVIDUALS */

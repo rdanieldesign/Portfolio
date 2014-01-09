@@ -5,11 +5,14 @@
 @import "partials/_main.scss";
 @import "partials/_normalize.scss";
 @import "partials/_flexslider.scss";
+@import "partials/_foundation-icons.scss";
 
 $width1: 840px;
 $width2: 700px;
 $width3: 610px;
 $width4: 400px;
+
+$red: #bc522a;
 
 /* -- MEDIA QUERIES DEFINING RESPONSIVE LAYOUTS -- */
 
@@ -97,8 +100,21 @@ $width4: 400px;
 
 }
 
+@font-face {
+    font-family: 'oswaldlight';
+    src: url('fonts/oswald-light-webfont.eot');
+    src: url('fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/oswald-light-webfont.woff') format('woff'),
+         url('fonts/oswald-light-webfont.ttf') format('truetype'),
+         url('fonts/oswald-light-webfont.svg#oswaldlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
   font-family: Helvetica, sans-serif;
+  background: url(../img/squairy_light.png);
 }
 
 .wrapper {
